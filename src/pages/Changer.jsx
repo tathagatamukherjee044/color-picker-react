@@ -3,6 +3,7 @@ import { useState } from "react";
 import { HexAlphaColorPicker } from "react-colorful";
 import {hexToRgbaString } from "../utils/convert";
 import { Link } from 'react-router-dom'
+import { GoCopy } from "react-icons/go";
 
 function Changer (){
 
@@ -10,6 +11,7 @@ function Changer (){
     if(!hex){
         hex = '000000' 
     }
+    hex = `#${hex}`
     const [hexColor, setHexColor] = useState(hex);
     const [rgbaColor, setRgbaColor] = useState(hexToRgbaString(hexColor));
 

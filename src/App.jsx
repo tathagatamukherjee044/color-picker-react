@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 import Picker from './pages/picker'
 import Changer from './pages/Changer'
 
 function App() {
+  const navigate = useNavigate()
+
+  useEffect(() =>{
+    navigate('/')
+  })
+
   return (
     <>
     <Routes>

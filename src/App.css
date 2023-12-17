@@ -1,13 +1,13 @@
 /* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "JetBrains Mono", sans-serif !important;
 }
 .popup {
-  width: 350px;
+  width: 150px !important;
   background: #fff;
 }
 .popup :where(.picker, header, .all-colors) {
@@ -23,7 +23,7 @@
   border: none;
   outline: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 10px !important;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
@@ -75,5 +75,5 @@ header .clear-all:hover {
   font-size: 0.96rem;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Open sans";
+  font-family: "JetBrains Mono", sans-serif !important;
 }

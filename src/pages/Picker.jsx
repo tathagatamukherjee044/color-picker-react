@@ -53,7 +53,7 @@ function Picker() {
 
   return (
     <>
-      <Link to="/changer">Chnager</Link>
+      <Link to="/changer">Changer</Link>
       <div className="popup">
         <div className="picker">
           <button id="color-picker" onClick={activateEyeDropper}>
